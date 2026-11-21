@@ -1,0 +1,27 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #05030f;
+}
+
+#stage {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.credit {
+  position: fixed;
+  right: 10px;
+  bottom: 8px;
+  font: 11px/1.4 ui-monospace, Menlo, Consolas, monospace;
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.credit:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
