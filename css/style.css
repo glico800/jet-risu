@@ -28,3 +28,25 @@ body {
 .credit:hover {
   color: rgba(255, 255, 255, 0.8);
 }
+
+.reset {
+  position: fixed;
+  left: 50%;
+  bottom: 8px;
+  transform: translateX(-50%);
+  padding: 3px 10px;
+  font: 11px/1.4 ui-monospace, Menlo, Consolas, monospace;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.35);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.reset:hover {
+  color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.5);
+}

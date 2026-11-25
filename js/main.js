@@ -21,7 +21,12 @@
     sprite = JetSquirrel.buildFrames(scale, dpr);
     space.resize(W, H, ctx);
 
-    // 元ネタと同じく、画面の広さに応じて数を決める
+    placeSquirrels();
+    explosions.length = 0;
+  }
+
+  // 元ネタと同じく、画面の広さに応じて数を決めてランダムに並べる
+  function placeSquirrels() {
     var size = sprite.size;
     var count = Math.round((W * H) / (96 * 96) / 3);
     squirrels.length = 0;
@@ -34,8 +39,9 @@
         vy: 0
       });
     }
-    explosions.length = 0;
   }
+
+  document.getElementById('reset').addEventListener('click', placeSquirrels);
 
   // タップ（クリック）した場所で爆発させる
   function spawnExplosion(x, y) {
